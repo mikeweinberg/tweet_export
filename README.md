@@ -16,5 +16,5 @@ Easy exporting of tweets to a CSV file
 * **Protect your Twitter API credentials as you would a password.**
 
 
-####Acknowledgements:
+#### Acknowledgements:
 Based on [tweet_dumper.py](https://gist.github.com/yanofsky/5436496) 
