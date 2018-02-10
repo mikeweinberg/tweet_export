@@ -1,36 +1,32 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-#requires python 3.6 and Tweepy
-#rename config-sample.yml to config.yml and add your Twitter credentials
+# command to download tweets of user "username": python3 tweet_export.py username 
+# requires python 3.6+ and Tweepy (pip install tweepy)
+# rename config-sample.yml to config.yml and add your Twitter credentials
 
+#based on tweet_dumper.py https://gist.github.com/yanofsky/5436496
+#upgraded to download tweets for arbitrary 
 
 import tweepy #https://github.com/tweepy/tweepy
 import csv
 import time
 import os
 import sys
-
-
 import yaml
 
 def get_script_path():
     return os.path.dirname(os.path.realpath(sys.argv[0]))
 
+#load config.yml
 config_location = os.path.join(get_script_path(),'config.yml')
-
 with open(config_location, 'r') as ymlfile:
     config = yaml.load(ymlfile)
 
-
+#Twitter API credentials read from config.yml
 consumer_key = config['consumer_key']
 consumer_secret = config['consumer_secret']
 access_key = config['access_key']
 access_secret = config['access_secret']
-
-#Twitter API credentials
-
-
-
 
 
 def get_all_tweets(screen_name):
@@ -85,5 +81,5 @@ if __name__ == '__main__':
 	if len(sys.argv) == 2:
 		get_all_tweets(sys.argv[1])
 	else:
-		print("Please enter screen name to download.")
+		print("Please provide a screen name to download tweets.")
 		
