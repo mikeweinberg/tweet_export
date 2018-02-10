@@ -1,12 +1,12 @@
 ## tweet_export.py
 Easy exporting of tweets to a CSV file
 
-####Requirements:
+#### Requirements:
 * A Twitter account with API credentials
 * Python 3.6+
 * [Tweepy](https://github.com/tweepy/tweepy) 
 
-####Instructions:
+#### Instructions:
 * Install Tweepy:
 `pip3 install tweepy`
 * Rename `config-sample.yml` to `config.yml` and add your Twitter API credentials. 
