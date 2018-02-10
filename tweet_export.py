@@ -4,8 +4,9 @@
 # requires python 3.6+ and Tweepy (pip install tweepy)
 # rename config-sample.yml to config.yml and add your Twitter credentials
 
-#based on tweet_dumper.py https://gist.github.com/yanofsky/5436496
-#upgraded to download tweets for arbitrary 
+# based on tweet_dumper.py https://gist.github.com/yanofsky/5436496
+# upgraded to download tweets for arbitrary screen names, download long tweets,
+# store credentials in a separate config.yml file, output dated files, and work with python3
 
 import tweepy #https://github.com/tweepy/tweepy
 import csv
