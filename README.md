@@ -2,7 +2,7 @@
 Easy exporting of tweets to a CSV file
 
 #### Requirements:
-* A Twitter account with API credentials
+* A Twitter account with [API credentials](https://apps.twitter.com/)
 * Python 3.6+
 * [Tweepy](https://github.com/tweepy/tweepy) 
 
